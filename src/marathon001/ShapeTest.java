@@ -3,6 +3,7 @@ package marathon001;
 import java.util.Scanner;
 
 
+
 public class ShapeTest {
 	
 	private Scanner input;
@@ -17,18 +18,19 @@ public class ShapeTest {
 
 	private void readInput() {
 		
-		this.input = new Scanner(System.in);
+		input = new Scanner(System.in);
 		while(true) {
+			System.out.println("Şekil Hesaplayıcıya Hoş Geldiniz.");
 			System.out.println("Çevre uzunluğu hesaplamak için 1");
 			System.out.println("Alan hesaplamak için 2");
 			System.out.println("Hem uzunluk hem alan hesaplamak için 3");
 			System.out.println("Çıkmak için -1");
-			int selection = this.input.nextInt();
+			int selection = input.nextInt();
 			input.nextLine();
 			if (selection == -1) {
 				break;
 			}
-			if(!this.processSelection(selection)){
+			if(!processSelection(selection)){
 				System.err.println("Yanlış seçim yaptınız!! Lütfen tekrar deneyin.");
 				continue;
 			}
@@ -44,18 +46,18 @@ public class ShapeTest {
 		switch (selection) {
 		case 1:
 			System.out.println("Çevre uzunluğu hesaplayıcısına hoşgeldiniz.");
-			this.perimeterCalculator();
+			perimeterCalculator();
 			break;
 			
 		case 2:
 			System.out.println("Alan hesaplayıcısına hoşgeldiniz.");
-			this.areaCalculator();
+			areaCalculator();
 			
 			break;
 			
 		case 3:
 			System.out.println("Hem çevre hem alan hesaplayıcısına hoşgeldiniz.");
-			this.perimeterAndArea();
+			perimeterAndArea();
 			
 			break;
 			
