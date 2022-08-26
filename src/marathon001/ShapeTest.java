@@ -2,6 +2,9 @@ package marathon001;
 
 import java.util.Scanner;
 
+// Yiğit Aral Yücepur
+// 26.08.2022
+
 
 
 public class ShapeTest {
@@ -63,6 +66,7 @@ public class ShapeTest {
 			
 
 		default:
+			
 			returnValue = false;
 		}
 		return returnValue;
@@ -173,7 +177,7 @@ public class ShapeTest {
 		System.out.println("Üçgenin çevresi: "+perimeter);
 	}else {
 		double perimeter= line1+line2+line3+line4;
-		System.out.println("Dörtgenin alanı: "+ perimeter);
+		System.out.println("Dörtgenin çevresi: "+ perimeter);
 	}
 			
 		}
